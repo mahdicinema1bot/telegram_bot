@@ -3,7 +3,7 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
 BOT_TOKEN = "7289610239:AAEN-hMd_vD_q_ES6soa1HlcX0186bJo-CA"
-CHANNEL_USERNAME = "@cinema_zone_channel"  # یوزرنیم کانالت
+CHANNEL_USERNAME = "@cinema_zone_channel"
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = update.effective_user.id
@@ -21,7 +21,7 @@ async def ask_to_join(update: Update):
         [InlineKeyboardButton("عضویت در کانال", url=f"https://t.me/{CHANNEL_USERNAME.lstrip('@')}")]
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
-    await update.message.reply_text("لطفا ابتدا در کانال عضو شوید:", reply_markup=reply_markup)
+    await update.message.reply_text("❗️ لطفاً ابتدا در کانال عضو شوید:", reply_markup=reply_markup)
 
 async def main():
     app = ApplicationBuilder().token(BOT_TOKEN).build()
