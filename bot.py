@@ -2,7 +2,7 @@ import asyncio
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
-BOT_TOKEN = "7289610239:AAEN-hMd_vD_q_ES6soa1HlcX0186bJo-CA"  # توکن ربات شما
+BOT_TOKEN = "7289610239:AAEN-hMd_vD_q_ES6soa1HlcX0186bJo-CA"
 CHANNEL_USERNAME = "@your_channel_username"  # یوزرنیم کانالت رو اینجا بزار
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
